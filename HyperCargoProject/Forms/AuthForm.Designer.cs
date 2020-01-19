@@ -112,7 +112,7 @@
             this.tbxPasswordAuth.PasswordChar = '*';
             this.tbxPasswordAuth.Size = new System.Drawing.Size(194, 26);
             this.tbxPasswordAuth.TabIndex = 5;
-            this.tbxPasswordAuth.Text = "qawsed";
+            this.tbxPasswordAuth.Text = "p6ketyup";
             this.tbxPasswordAuth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPasswordAuth_KeyPress);
             // 
             // pbxLogin
@@ -142,7 +142,7 @@
             this.tbxLoginAuth.Name = "tbxLoginAuth";
             this.tbxLoginAuth.Size = new System.Drawing.Size(194, 26);
             this.tbxLoginAuth.TabIndex = 2;
-            this.tbxLoginAuth.Text = "babazaeb";
+            this.tbxLoginAuth.Text = "alexsonz";
             this.tbxLoginAuth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxLoginAuth_KeyPress);
             // 
             // btnAuth

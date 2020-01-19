@@ -57,10 +57,22 @@ namespace HyperCargoProject.UsersControl
             }
             else
             {
-                DBConnection.DBConnection.UpdateUserPersonalData(lblLoginName.Text, tbxPassword.Text, tbxSurname.Text, tbxName.Text, tbxLastName.Text, tbxCash.Text);
-                lblCash.Text = $"{Convert.ToString(Cash)} рублей";
-                tbxCash.Clear();
+                if (string.IsNullOrEmpty(tbxCash.Text))
+                {
+                    tbxCash.Text = tbxCash.Text;
+                }
+                else
+                {
+                    DBConnection.DBConnection.UpdateUserPersonalData(lblLoginName.Text, tbxPassword.Text, tbxSurname.Text, tbxName.Text, tbxLastName.Text, tbxCash.Text);
+                    lblCash.Text = $"{Convert.ToString(Cash)} рублей";
+                    tbxCash.Clear();
+                }
             }
+        }
+
+        private void ucPersonalAccount_MouseLeave(object sender, EventArgs e)
+        {
+            lblCash.Text = $"{Convert.ToString(Cash)} рублей";
         }
     }
 }

@@ -109,7 +109,7 @@
             this.tbxEmailReg.Name = "tbxEmailReg";
             this.tbxEmailReg.Size = new System.Drawing.Size(194, 26);
             this.tbxEmailReg.TabIndex = 9;
-            this.tbxEmailReg.Text = "forvard2201@yandex.ru";
+            this.tbxEmailReg.Text = "alexsonz@yandex.ru";
             this.tbxEmailReg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxEmailReg_KeyPress);
             // 
             // linklblReg
@@ -151,7 +151,7 @@
             this.tbxPasswordReg.PasswordChar = '*';
             this.tbxPasswordReg.Size = new System.Drawing.Size(194, 26);
             this.tbxPasswordReg.TabIndex = 5;
-            this.tbxPasswordReg.Text = "qawsed";
+            this.tbxPasswordReg.Text = "p6ketyup";
             this.tbxPasswordReg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPasswordReg_KeyPress);
             // 
             // pbxLogin
@@ -181,7 +181,7 @@
             this.tbxLoginReg.Name = "tbxLoginReg";
             this.tbxLoginReg.Size = new System.Drawing.Size(194, 26);
             this.tbxLoginReg.TabIndex = 2;
-            this.tbxLoginReg.Text = "babazaeb";
+            this.tbxLoginReg.Text = "alexsonz";
             this.tbxLoginReg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxLoginReg_KeyPress);
             // 
             // btnReg

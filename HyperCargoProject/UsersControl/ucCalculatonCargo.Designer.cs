@@ -51,6 +51,8 @@
             this.btnPayment = new System.Windows.Forms.Button();
             this.btnCalculationCargo = new System.Windows.Forms.Button();
             this.lblCashPersAcc = new System.Windows.Forms.Label();
+            this.pbxCalculationCargo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCalculationCargo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTransportCargo
@@ -59,7 +61,7 @@
             this.lblTransportCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(213)))), ((int)(((byte)(200)))));
             this.lblTransportCargo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblTransportCargo.ForeColor = System.Drawing.Color.White;
-            this.lblTransportCargo.Location = new System.Drawing.Point(36, 30);
+            this.lblTransportCargo.Location = new System.Drawing.Point(53, 30);
             this.lblTransportCargo.Name = "lblTransportCargo";
             this.lblTransportCargo.Size = new System.Drawing.Size(192, 21);
             this.lblTransportCargo.TabIndex = 3;
@@ -317,11 +319,21 @@
             this.lblCashPersAcc.TabIndex = 32;
             this.lblCashPersAcc.Text = "lblCashPersAcc";
             // 
+            // pbxCalculationCargo
+            // 
+            this.pbxCalculationCargo.BackgroundImage = global::HyperCargoProject.Properties.Resources.icons8_грузовая_машина_30;
+            this.pbxCalculationCargo.Location = new System.Drawing.Point(17, 21);
+            this.pbxCalculationCargo.Name = "pbxCalculationCargo";
+            this.pbxCalculationCargo.Size = new System.Drawing.Size(30, 30);
+            this.pbxCalculationCargo.TabIndex = 33;
+            this.pbxCalculationCargo.TabStop = false;
+            // 
             // ucCalculatonCargo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pbxCalculationCargo);
             this.Controls.Add(this.lblCashPersAcc);
             this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.lblPrice);
@@ -349,6 +361,7 @@
             this.Size = new System.Drawing.Size(570, 435);
             this.Load += new System.EventHandler(this.ucCalculatonCargo_Load);
             this.MouseLeave += new System.EventHandler(this.ucCalculatonCargo_MouseLeave);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCalculationCargo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,5 +392,6 @@
         public System.Windows.Forms.Label lblPrice;
         public System.Windows.Forms.Button btnPayment;
         private System.Windows.Forms.Label lblCashPersAcc;
+        private System.Windows.Forms.PictureBox pbxCalculationCargo;
     }
 }

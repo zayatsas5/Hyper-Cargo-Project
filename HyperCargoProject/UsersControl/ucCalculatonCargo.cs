@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HyperCargoProject.Classes;
-using HyperCargoProject.Forms;
+using HyperCargoProject.UsersControl;
 
 namespace HyperCargoProject.UsersControl
 {
@@ -19,6 +19,7 @@ namespace HyperCargoProject.UsersControl
             InitializeComponent();
         }
 
+        public int change =0;
         // к оплате
         public static int Result { get; set; }
 
@@ -78,8 +79,18 @@ namespace HyperCargoProject.UsersControl
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            PaymentForm paymentForm = new PaymentForm(Result);
-            paymentForm.ShowDialog();
+            if(Result > ucPersonalAccount.Cash)
+            {
+                MessageBox.Show("На аккаунте недостаточно средств для совершения сделки!");
+            }
+            else
+            {
+                change = ucPersonalAccount.Cash - Result;
+                ucPersonalAccount.Cash = change;
+                MessageBox.Show("Оплачено!");
+                Result = 0;
+                Document.CreateDocument();
+            }
         }
 
         private void ucCalculatonCargo_Load(object sender, EventArgs e)

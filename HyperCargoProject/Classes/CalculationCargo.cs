@@ -13,7 +13,9 @@ namespace HyperCargoProject.Classes
 
         static int intVolume = 0;
         const int minVolume = 2;
+        // денег за 1 км
         const int kmlitres = 150;
+        // минимальный заказ
         const int minSummZakaz = 1250;
         static int price = 0;
 

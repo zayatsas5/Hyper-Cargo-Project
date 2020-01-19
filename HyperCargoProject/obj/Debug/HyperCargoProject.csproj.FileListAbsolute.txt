@@ -27,7 +27,5 @@ C:\Projects\HyperCargoProject\HyperCargoProject\bin\Debug\System.Data.SQLite.xml
 C:\Projects\HyperCargoProject\HyperCargoProject\bin\Debug\System.Data.SQLite.dll.config
 C:\Projects\HyperCargoProject\HyperCargoProject\obj\Debug\HyperCargoProject.UsersControl.ucCalculatonCargo.resources
 C:\Projects\HyperCargoProject\HyperCargoProject\obj\Debug\HyperCargoProject.csproj.CopyComplete
-C:\Projects\HyperCargoProject\HyperCargoProject\obj\Debug\HyperCargoProject.Forms.PaymentForm.resources
 C:\Projects\HyperCargoProject\HyperCargoProject\obj\Debug\HyperCargoProject.UsersControl.ucCargoHistory.resources
-C:\Projects\HyperCargoProject\HyperCargoProject\obj\Debug\HyperCargoProject.UsersControl.ucElementHistory.resources
 C:\Projects\HyperCargoProject\HyperCargoProject\obj\Debug\HyperCargoProject.csprojAssemblyReference.cache

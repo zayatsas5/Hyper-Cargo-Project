@@ -29,9 +29,9 @@ namespace HyperCargoProject.Forms
             }
             else
             {
-                DBConnection.DBConnection.CheckLogin(tbxLoginAuth.Text, tbxPasswordAuth.Text);
-                tbxLoginAuth.Clear();
-                tbxPasswordAuth.Clear();
+                    DBConnection.DBConnection.CheckLogin(tbxLoginAuth.Text, tbxPasswordAuth.Text);
+                    tbxLoginAuth.Clear();
+                    tbxPasswordAuth.Clear();
             }
         }
 

@@ -52,7 +52,9 @@
             this.lblCashName = new System.Windows.Forms.Label();
             this.tbxCash = new System.Windows.Forms.TextBox();
             this.lblCash = new System.Windows.Forms.Label();
+            this.pbxPersonalAccount = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPersonalAccount)).BeginInit();
             this.SuspendLayout();
             // 
             // lblLogin
@@ -233,7 +235,7 @@
             this.lblPersonalAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(213)))), ((int)(((byte)(200)))));
             this.lblPersonalAccount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblPersonalAccount.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblPersonalAccount.Location = new System.Drawing.Point(48, 15);
+            this.lblPersonalAccount.Location = new System.Drawing.Point(80, 21);
             this.lblPersonalAccount.Name = "lblPersonalAccount";
             this.lblPersonalAccount.Size = new System.Drawing.Size(139, 21);
             this.lblPersonalAccount.TabIndex = 20;
@@ -307,11 +309,21 @@
             this.lblCash.TabIndex = 25;
             this.lblCash.Text = "lblCash";
             // 
+            // pbxPersonalAccount
+            // 
+            this.pbxPersonalAccount.BackgroundImage = global::HyperCargoProject.Properties.Resources.icons8_пользователь_30;
+            this.pbxPersonalAccount.Location = new System.Drawing.Point(44, 12);
+            this.pbxPersonalAccount.Name = "pbxPersonalAccount";
+            this.pbxPersonalAccount.Size = new System.Drawing.Size(30, 30);
+            this.pbxPersonalAccount.TabIndex = 26;
+            this.pbxPersonalAccount.TabStop = false;
+            // 
             // ucPersonalAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pbxPersonalAccount);
             this.Controls.Add(this.lblCash);
             this.Controls.Add(this.tbxCash);
             this.Controls.Add(this.pnlCash);
@@ -339,7 +351,9 @@
             this.Name = "ucPersonalAccount";
             this.Size = new System.Drawing.Size(570, 435);
             this.Load += new System.EventHandler(this.ucPersonalAccount_Load);
+            this.MouseLeave += new System.EventHandler(this.ucPersonalAccount_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pbxPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPersonalAccount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,6 +384,7 @@
         private System.Windows.Forms.Panel pnlCash;
         private System.Windows.Forms.Label lblCashName;
         private System.Windows.Forms.TextBox tbxCash;
-        private System.Windows.Forms.Label lblCash;
+        public System.Windows.Forms.Label lblCash;
+        private System.Windows.Forms.PictureBox pbxPersonalAccount;
     }
 }
